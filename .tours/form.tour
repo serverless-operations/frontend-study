@@ -1,0 +1,24 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Form",
+  "steps": [
+    {
+      "file": "00_overview/00_form/finished/index.html",
+      "description": "`label` を `input` などのコントローラーと関連付けることでUXを向上させることもできます。",
+      "line": 10,
+      "title": "formタグ"
+    },
+    {
+      "file": "00_overview/00_form/finished/index.html",
+      "description": "`form` 内に `button` を配置した場合、デフォルトで `type=\"submit\"` のボタンとなる。\n\nこのボタンを押下することで、 `form` 内の情報が指定した場所にリクエストとして投げられる\n\nリクエストを投げたあとは、そのリクエストのレスポンスによってページはリフレッシュされます（元々の情報は消えます）",
+      "line": 35,
+      "title": "form内のbutton"
+    },
+    {
+      "file": "00_overview/00_form/finished/index.html",
+      "description": "`label` を `input` などのコントローラーと関連付けることでUXを向上させることもできます。",
+      "line": 12,
+      "title": "labelの活用"
+    }
+  ]
+}
