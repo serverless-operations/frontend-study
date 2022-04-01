@@ -1,0 +1,84 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "JavaScript Basics",
+  "steps": [
+    {
+      "file": "00_overview/10_javascript/finished/index.html",
+      "description": "JavaScriptは `script` タグで読み込んだり宣言ができる",
+      "line": 8,
+      "title": "JavaScriptの読み込み"
+    },
+    {
+      "file": "00_overview/10_javascript/finished/app.js",
+      "description": "DOMの操作は、DOMの準備ができてから行うので `DOMContentLoaded` イベントを監視しておく",
+      "line": 7,
+      "title": "DOMContentLoaded"
+    },
+    {
+      "file": "00_overview/10_javascript/finished/app.js",
+      "selection": {
+        "start": {
+          "line": 8,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 53
+        }
+      },
+      "description": "DOMの操作を行う場合は、対象となるDOMをとってくる",
+      "title": "getElementById"
+    },
+    {
+      "file": "00_overview/10_javascript/finished/app.js",
+      "selection": {
+        "start": {
+          "line": 13,
+          "character": 1
+        },
+        "end": {
+          "line": 21,
+          "character": 6
+        }
+      },
+      "description": "「DOM上で何かが起きたときに、何かをしたい」ときにDOMに `addEventListener` を宣言する",
+      "title": "addEventListener"
+    },
+    {
+      "file": "00_overview/10_javascript/finished/app.js",
+      "selection": {
+        "start": {
+          "line": 13,
+          "character": 1
+        },
+        "end": {
+          "line": 21,
+          "character": 6
+        }
+      },
+      "description": "functionで関数を定義するのと、アロー関数で関数を定義するのとでは `this` の挙動が異なるので注意",
+      "title": "アロー関数"
+    },
+    {
+      "file": "00_overview/10_javascript/finished/app.js",
+      "description": "formで `submit` が発生した場合、デフォルトでブラウザはHTTPリクエストを送信しようとします。JavaScriptで制御する場合、この挙動を抑制したいので `preventDefault` を行います。",
+      "line": 24,
+      "title": "preventDefault"
+    },
+    {
+      "file": "00_overview/10_javascript/finished/app.js",
+      "selection": {
+        "start": {
+          "line": 26,
+          "character": 1
+        },
+        "end": {
+          "line": 33,
+          "character": 33
+        }
+      },
+      "description": "AjaxとPromise。そしてJavaScriptはシングルスレッド。",
+      "title": "AjaxとPromise"
+    }
+  ]
+}
