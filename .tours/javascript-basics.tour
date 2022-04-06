@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "JavaScript Basics",
+  "title": "0010_JavaScript Basics",
   "steps": [
     {
       "file": "00_overview/10_javascript/finished/index.html",
