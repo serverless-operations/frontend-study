@@ -1,0 +1,81 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "0020_Bundle",
+  "steps": [
+    {
+      "file": "00_overview/20_bundle/finished/vite-project/main.js",
+      "description": "LinterやFormatterが定義されていれば、コードのフォーマットや、コード規約に違反したロジックが自動で検出される",
+      "line": 1,
+      "title": "Intro"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/vite-project/.eslintrc",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 17,
+          "character": 2
+        }
+      },
+      "description": "ESLintのルールは、例えば `.eslintrc` の中に定義できる",
+      "title": "ESLintの設定"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/vite-project/.prettierrc",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 7,
+          "character": 1
+        }
+      },
+      "description": "同じように、Prettierは `.prettierrc` に定義できる",
+      "title": "Prettierの設定"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/vite-project/main.js",
+      "description": "バンドラーを使う場合は別ファイルから変数や関数をimportすることも可能。最終的にバンドラーがまとめてくれる。",
+      "line": 2,
+      "title": "モジュールのimport"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/vite-project/main.js",
+      "description": "外部モジュールもimportが可能",
+      "line": 3,
+      "title": "外部モジュールのimport"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/vite-project/package.json",
+      "description": "ローカルでサーバーを立ち上げて開発を可能としてくれる",
+      "line": 6,
+      "title": "npm scripts dev"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/vite-project/package.json",
+      "description": "buildを行うと、バンドラーがJavaScriptやCSSをまとめて、HTMLから呼び出すところの成果物作成まで自動でやってくれる。\n成果物は `dist` ディレクトリに出力される",
+      "line": 7,
+      "title": "npm scripts build"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/vite-project/package.json",
+      "selection": {
+        "start": {
+          "line": 9,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 30
+        }
+      },
+      "description": "npm scriptsは繰り返し行うコマンドなどを設定しておいて便利に使うことができる",
+      "title": "npm scripts pre/postの活用"
+    }
+  ]
+}

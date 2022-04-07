@@ -1,0 +1,17 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    },
+    "extends": ["prettier"],
+    "rules": {
+        "no-undef": "error",
+        "no-var": "error",
+        "camelcase": "warn",
+        "no-console": "warn"
+    }
+}
