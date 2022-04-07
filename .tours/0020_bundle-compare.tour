@@ -1,0 +1,40 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "0020_Bundle Compare",
+  "steps": [
+    {
+      "directory": "00_overview/20_bundle/finished/compare/webpack",
+      "description": "Vue CLIを使ってwebpack版のVue 3プロジェクトを作成したディレクトリ",
+      "title": "webpack project"
+    },
+    {
+      "directory": "00_overview/20_bundle/finished/compare/vite",
+      "description": "Viteで作成したVue3のプロジェクト",
+      "title": "vite project"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/compare/webpack/package.json",
+      "description": "ローカルサーバーを立ち上げる。少しだけもっさりします。\n\n```sh\nnpm run dev\n```",
+      "line": 6,
+      "title": "webpack npm run dev"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/compare/vite/package.json",
+      "description": "ローカルサーバーを立ち上げる。webpackと比べると速い\n\n```sh\nnpm run dev\n```",
+      "line": 6,
+      "title": "vite npm run dev"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/compare/webpack/package.json",
+      "description": "webpackでbuildを行うと5秒ほどかかる\n\n```sh\ntime npm run build\n```",
+      "line": 7,
+      "title": "webpack npm run build"
+    },
+    {
+      "file": "00_overview/20_bundle/finished/compare/vite/package.json",
+      "description": "Viteのbuildは1秒もかからない\n\n```sh\nnpm run build\n```",
+      "line": 7,
+      "title": "vite npm run build"
+    }
+  ]
+}
