@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "1010 SPA Routing",
+  "title": "1010 SPA Routing(Vanilla)",
   "steps": [
     {
       "file": "10_spa_routing/vanilla/index.html",
