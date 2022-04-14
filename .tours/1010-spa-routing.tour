@@ -1,0 +1,75 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "1010 SPA Routing",
+  "steps": [
+    {
+      "file": "10_spa_routing/vanilla/index.html",
+      "selection": {
+        "start": {
+          "line": 13,
+          "character": 1
+        },
+        "end": {
+          "line": 15,
+          "character": 39
+        }
+      },
+      "description": "ページ遷移用のaタグは普通のHTMLと同じように作成する",
+      "title": "aタグ"
+    },
+    {
+      "file": "10_spa_routing/vanilla/index.html",
+      "description": "URLに応じたコンテンツを注入できる枠を用意しておく",
+      "line": 17,
+      "title": "main-viewコンテナ"
+    },
+    {
+      "file": "10_spa_routing/vanilla/app.js",
+      "selection": {
+        "start": {
+          "line": 11,
+          "character": 1
+        },
+        "end": {
+          "line": 15,
+          "character": 8
+        }
+      },
+      "description": "aタグがクリックされたときのハンドラを設定します",
+      "title": "aタグのハンドラ"
+    },
+    {
+      "file": "10_spa_routing/vanilla/app.js",
+      "description": "aタグがクリックされたときにHTMLのデフォルト動作のページ遷移（ページリフレッシュ）してほしくないので `preventDefault()` する",
+      "line": 12,
+      "title": "preventDefault"
+    },
+    {
+      "file": "10_spa_routing/vanilla/app.js",
+      "description": "ブラウザのURL更新と、ブラウザの「前へ」「戻る」に対応するための実装",
+      "line": 13,
+      "title": "pushState"
+    },
+    {
+      "file": "10_spa_routing/vanilla/app.js",
+      "description": "URLのパスを取得する",
+      "line": 22,
+      "title": "window.location.pathname"
+    },
+    {
+      "file": "10_spa_routing/vanilla/app.js",
+      "selection": {
+        "start": {
+          "line": 23,
+          "character": 1
+        },
+        "end": {
+          "line": 25,
+          "character": 35
+        }
+      },
+      "description": "URLのパスに応じたコンテンツを取得してHTMLを差し込む",
+      "title": "routing"
+    }
+  ]
+}
