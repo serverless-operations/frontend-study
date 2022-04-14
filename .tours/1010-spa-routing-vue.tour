@@ -6,11 +6,11 @@
       "file": "10_spa_routing/vue/src/router/index.js",
       "selection": {
         "start": {
-          "line": 30,
+          "line": 42,
           "character": 1
         },
         "end": {
-          "line": 33,
+          "line": 45,
           "character": 4
         }
       },
@@ -21,11 +21,11 @@
       "file": "10_spa_routing/vue/src/router/index.js",
       "selection": {
         "start": {
-          "line": 7,
+          "line": 9,
           "character": 1
         },
         "end": {
-          "line": 28,
+          "line": 40,
           "character": 3
         }
       },
