@@ -1,0 +1,48 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "1010 SPA Routing (Vue)",
+  "steps": [
+    {
+      "file": "10_spa_routing/vue/src/router/index.js",
+      "selection": {
+        "start": {
+          "line": 42,
+          "character": 1
+        },
+        "end": {
+          "line": 45,
+          "character": 4
+        }
+      },
+      "description": "VueのRouterを作成。 `createWebHistory` を使うことで `pushState` を使ったルーティングになる。\n`routes` に、「どういうURLのときにどのコンポーネントを表示する」かを定義する",
+      "title": "createRouter"
+    },
+    {
+      "file": "10_spa_routing/vue/src/router/index.js",
+      "selection": {
+        "start": {
+          "line": 9,
+          "character": 1
+        },
+        "end": {
+          "line": 40,
+          "character": 3
+        }
+      },
+      "description": "ルーティングは直感的に設定することができる",
+      "title": "routesの定義"
+    },
+    {
+      "file": "10_spa_routing/vue/src/main.js",
+      "description": "VueのAppに `router` を使う宣言をしてあげることで使用可能となる",
+      "line": 5,
+      "title": "app.use router"
+    },
+    {
+      "file": "10_spa_routing/vue/src/App.vue",
+      "description": "`<router-view>` を使うことで、その場所にRouterに定義したコンポーネントが表示されるようになる",
+      "line": 7,
+      "title": "router-view"
+    }
+  ]
+}
