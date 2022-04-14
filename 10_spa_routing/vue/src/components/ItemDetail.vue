@@ -1,4 +1,4 @@
-savedItems<script setup>
+<script setup>
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { getItemById, savedItems } from '../api/items';
