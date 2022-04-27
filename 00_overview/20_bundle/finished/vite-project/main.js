@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
 `;
 
 const start = async () => {
-    console.log('waiting...')
+    console.log('waiting...');
     await wait(1); // 2017 console.log('start');
 
     const a = { a: 'hi' };
