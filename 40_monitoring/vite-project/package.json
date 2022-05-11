@@ -6,10 +6,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "release": "sentry-cli releases propose-version"
+    "sentry:propose-version": "sentry-cli releases propose-version",
+    "sentry:create-release": "sentry-cli releases -o ${SENTRY_ORG} new -p ${SENTRY_PROJECT} ${VITE_APP_RELEASE_VERSION}",
+    "sentry:upload-sourcemap": "sentry-cli releases -o ${SENTRY_ORG} -p ${SENTRY_PROJECT} files ${VITE_APP_RELEASE_VERSION} upload-sourcemaps --url-prefix \"~/assets\" --validate dist/assets",
+    "development": "dotenv-run-script .env --"
   },
   "devDependencies": {
     "@sentry/cli": "^2.0.4",
+    "dotenv-run-script": "^0.2.0",
     "vite": "^2.9.7"
   },
   "dependencies": {

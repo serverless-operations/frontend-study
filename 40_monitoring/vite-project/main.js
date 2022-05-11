@@ -3,13 +3,13 @@ import './style.css';
 import * as Sentry from '@sentry/browser';
 import { BrowserTracing } from '@sentry/tracing';
 
-Sentry.init({
-  dsn: 'https://712b17e36f3a4c399fbb88dbc951e483@o1221569.ingest.sentry.io/6394874',
-  integrations: [new BrowserTracing()],
+const appReleaseVersion = import.meta.env.VITE_APP_RELEASE_VERSION;
+const sentryDSN = import.meta.env.VITE_SENTRY_DSN;
 
-  // Set tracesSampleRate to 1.0 to capture 100%
-  // of transactions for performance monitoring.
-  // We recommend adjusting this value in production
+Sentry.init({
+  dsn: sentryDSN,
+  integrations: [new BrowserTracing()],
+  release: appReleaseVersion,
   tracesSampleRate: 1.0,
 });
 
