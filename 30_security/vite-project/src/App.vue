@@ -4,9 +4,12 @@ import { ref } from 'vue';
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
 import DangerousHtml from './dangerousHtml.json';
+// import { sanitizeUrl } from '@braintree/sanitize-url'
+
 
 const msg = ref('Hello Vue 3 + Vite')
 const anchorNg = ref('javascript:alert("危険なaタグ！")')
+// const anchorOk = ref(sanitizeUrl(anchorNg.value))
 
 function vHtmlOk() {
   msg.value = "<h1>安全なHTML</h1>"
@@ -34,6 +37,7 @@ function vHtmlNg() {
     <h2>aタグ</h2>
     <div class="a-area">
       <a :href="anchorNg">脆弱なaタグ</a>
+      <!-- <a :href="anchorOk">大丈夫なaタグ</a> -->
     </div>
   </div>
 </template>
