@@ -1,3 +1,4 @@
+// ユーザーを管理するインメモリのオブジェクト（実際のDBは用意しない）
 export const USERS = {
   'user-1': {
     id: 'user-1',

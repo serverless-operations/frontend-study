@@ -4,9 +4,9 @@ import axios from '../api/axios';
 export function useAcceptTask() {
   const isLoading = ref(false);
 
-  async function acceptTask(id) {
+  async function acceptTask(task) {
     isLoading.value = true;
-    await axios.put(`/tasks/${id}`);
+    await axios.put(`/tasks/${task.id}`, task);
     isLoading.value = false;
   }
 

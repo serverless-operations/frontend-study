@@ -4,13 +4,19 @@ import axios from '../api/axios';
 export function useTasks() {
   const isLoading = ref(true);
   const tasks = ref([]);
-  axios.get('/tasks').then((v) => {
-    tasks.value = v.data;
+
+  const fetchTasks = async () => {
+    isLoading.value = true;
+    const { data } = await axios.get('/tasks');
+    tasks.value = data;
     isLoading.value = false;
-  });
+  };
+
+  fetchTasks();
 
   return {
     isLoading,
     tasks,
+    refetch: fetchTasks,
   };
 }

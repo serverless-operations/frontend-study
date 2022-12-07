@@ -3,6 +3,10 @@
     Login
   </div>
   <div>
+    <ul>
+      <li>member: yamadataro</li>
+      <li>manager: tanakajiro</li>
+    </ul>
     <form @submit="onSubmit">
       <div><label for="username">ユーザー名</label><input id="username" type="text" v-model="username"></div>
       <div><label for="password">パスワード</label><input id="password" type="password" v-model="password"></div>
