@@ -1,0 +1,46 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "2020 Auth Improved",
+  "steps": [
+    {
+      "file": "50_auth/10_improved/api/src/handlers/handleLogin.js",
+      "description": "JWTを発行し、認可が必要なAPIではトークンをリクエストに乗せてもらうようにする",
+      "line": 17
+    },
+    {
+      "file": "50_auth/10_improved/ui/src/api/axios.js",
+      "description": "axiosのinterceptorを使って、すべてのリクエストにトークンを付与させる（トークンが無ければ空文字）",
+      "line": 9
+    },
+    {
+      "file": "50_auth/10_improved/api/src/server.js",
+      "description": "サーバーサイドにはだいたいの場合ミドルウェアという仕組みがあり、リクエストの処理の途中で挟む処理を実装できる。\n「ログイン済みのユーザーのみ使えるAPI」などは、ミドルウェアを使って共通処理を行う。",
+      "line": 9
+    },
+    {
+      "file": "50_auth/10_improved/api/src/server.js",
+      "description": "authorizeRequestのミドルウェアがあるおかげで、Authorizationヘッダーの無い（ログインしていない）リクエストは受け付けなくなる",
+      "line": 38
+    },
+    {
+      "file": "50_auth/10_improved/api/src/handlers/handleTasks.js",
+      "description": "リクエストしてきたユーザーの情報がわかることで、サーバーサイドでの認可が詳細に行えるようになる",
+      "line": 3
+    },
+    {
+      "file": "50_auth/10_improved/ui/src/pages/HomePage.vue",
+      "description": "フロントのビジネスロジックが不要となる",
+      "line": 30
+    },
+    {
+      "file": "50_auth/10_improved/api/src/handlers/handleTasks.js",
+      "description": "APIはユーザーからのリクエストの内容をそのまま信じてはいけません。必ず詳細まで確認（認可）してから最終的な処理を実行します。",
+      "line": 14
+    },
+    {
+      "file": "50_auth/10_improved/api/src/handlers/handleTasks.js",
+      "description": "認可することで、不正なリクエストを送ってきたクライアントに対しては403などのレスポンスが返せるようになり、不正なデータの作成を防ぐことができる",
+      "line": 23
+    }
+  ]
+}
