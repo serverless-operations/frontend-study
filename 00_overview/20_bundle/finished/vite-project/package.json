@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
-    "vite": "^2.9.0"
+    "vite": "^2.9.13"
   },
   "dependencies": {
     "fibonacci-series": "^1.0.1"
