@@ -1,0 +1,81 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "2010 Vulnerable Auth Walkthrough",
+  "steps": [
+    {
+      "file": "50_auth/00_start/ui/src/router/index.js",
+      "description": "ホーム画面（タスク一覧）とログイン画面がある",
+      "line": 6
+    },
+    {
+      "file": "50_auth/00_start/ui/src/router/index.js",
+      "description": "ログイン画面ではない場合は、ユーザーがログインしている必要がある",
+      "line": 25
+    },
+    {
+      "file": "50_auth/00_start/ui/src/pages/LoginPage.vue",
+      "description": "ログインできるかAPIにリクエストする",
+      "line": 28
+    },
+    {
+      "file": "50_auth/00_start/api/src/server.js",
+      "description": "ログインのPOSTリクエストを受け取れるようにしている",
+      "line": 13
+    },
+    {
+      "file": "50_auth/00_start/api/src/handlers/handleLogin.js",
+      "description": "このデモアプリではデータベースは用意しておらず、簡易的にインメモリのオブジェクトで代替している（本来はここでデータベースにリクエストする）",
+      "line": 7
+    },
+    {
+      "file": "50_auth/00_start/api/src/handlers/handleLogin.js",
+      "description": "ユーザーが見つかったらユーザー情報を返す",
+      "line": 14
+    },
+    {
+      "file": "50_auth/00_start/ui/src/composables/useSubmitLogin.js",
+      "description": "ユーザー情報が取得できたら後から使えるように保存しておく",
+      "line": 13
+    },
+    {
+      "file": "50_auth/00_start/ui/src/pages/LoginPage.vue",
+      "description": "ログインが成功したらホーム画面に遷移する",
+      "line": 31
+    },
+    {
+      "file": "50_auth/00_start/ui/src/pages/HomePage.vue",
+      "description": "ホーム画面ではタスク一覧を取得し、表示している",
+      "line": 30
+    },
+    {
+      "file": "50_auth/00_start/ui/src/pages/HomePage.vue",
+      "description": "タスクの状態が「起票（created）」で、ログインユーザーが「マネージャー（manager）」であれば「承認可能である」という情報を加える",
+      "line": 35
+    },
+    {
+      "file": "50_auth/00_start/ui/src/pages/HomePage.vue",
+      "description": "承認可能であれば、承認ボタンを表示する。ロールが「メンバー」の場合はこのボタンが表示されることはない。",
+      "line": 11
+    },
+    {
+      "file": "50_auth/00_start/ui/src/pages/HomePage.vue",
+      "description": "承認ボタンが押されたらAPIにリクエストを投げます",
+      "line": 40
+    },
+    {
+      "file": "50_auth/00_start/api/src/server.js",
+      "description": "特定のタスクに関する更新情報を受取るAPI",
+      "line": 17
+    },
+    {
+      "file": "50_auth/00_start/api/src/handlers/handleTasks.js",
+      "description": "与えられた情報でタスクを更新し、レスポンスを返します",
+      "line": 7
+    },
+    {
+      "file": "50_auth/00_start/ui/src/pages/HomePage.vue",
+      "description": "タスクの更新に成功したら最新のタスク一覧を再取得します",
+      "line": 44
+    }
+  ]
+}

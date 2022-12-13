@@ -1,0 +1,16 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "2011 Vulnerable Auth Review",
+  "steps": [
+    {
+      "file": "50_auth/00_start/ui/src/pages/HomePage.vue",
+      "description": "権限のロジックがフロントエンドにある",
+      "line": 35
+    },
+    {
+      "file": "50_auth/00_start/api/src/handlers/handleTasks.js",
+      "description": "APIが「誰からのリクエスト」なのかを把握できておらず、渡ってきた情報もそのまま適用している。\nPostmanのような手段を使えば、誰でも好きな情報をリクエストできてしまう。\n\n例\n`http://localhost:8888/tasks/task-1`\n\n```json\n{\n\t\"hoge\": \"moge\",\n\t\"moge\": \"piyo\",\n\t\"status\": \"hogehoge\"\n}\n```",
+      "line": 17
+    }
+  ]
+}

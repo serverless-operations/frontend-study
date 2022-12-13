@@ -15,12 +15,12 @@
     {
       "file": "50_auth/10_improved/api/src/server.js",
       "description": "サーバーサイドにはだいたいの場合ミドルウェアという仕組みがあり、リクエストの処理の途中で挟む処理を実装できる。\n「ログイン済みのユーザーのみ使えるAPI」などは、ミドルウェアを使って共通処理を行う。",
-      "line": 9
+      "line": 10
     },
     {
       "file": "50_auth/10_improved/api/src/server.js",
       "description": "authorizeRequestのミドルウェアがあるおかげで、Authorizationヘッダーの無い（ログインしていない）リクエストは受け付けなくなる",
-      "line": 38
+      "line": 40
     },
     {
       "file": "50_auth/10_improved/api/src/handlers/handleTasks.js",
